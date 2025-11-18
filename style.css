@@ -1,0 +1,55 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+h1{
+    color: lightblue;
+}
+
+/* Attribute selector */
+a{
+    color: green;
+    text-decoration: none;
+}a:hover {
+    color: red;
+}
+/* Child selector */
+ul > li {
+font-weight: bold;
+}
+
+/*sibling selector */
+h1 + p{
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*:hover pseudo-class*/
+li:hover{
+    color: lightblue;
+}
+
+/*nth-child(n) pseudo-class */
+li: :nth-child(3){
+    background-color:black;
+}
+/* :not (selector) pseudo-class*/
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+/*::before pseudo-element */
+li::before {
+    content: check;
+}
+/*::after pseudo-element */
+a::after {
+    content: ;
+}
+/* ::first::letter pseudo_element */
+p::first-letter{
+    font: 200%;
+    color: palevioletred;
+}
+body
